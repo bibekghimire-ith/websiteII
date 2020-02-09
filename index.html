@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bibek Ghimire</title>
+	<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	<script type="text/javascript" src="./static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./static/js/jquery.js"></script>
+	<script type="text/javascript" src="./static/js/clock.js"></script>
+</head>
+<body onload="startTime()">
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+  <a class="navbar-brand" href="#home">Bibek Ghimire</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cv">Bio data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacts">Contact Me</a>
+      </li>
+    </ul>
+   
+   <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <div  id="clock" class="text-center text-white"></div>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Login As Admin</a>
+        </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+<!-- Header Section -->
+
+<header class="d-flex justify-content-center align-items-center text-center " id="home">
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+         
+          <h1 class="display-4 text-uppercase glow text-light" id="farukPort">Bibek Ghimire Portfolio</h1>
+          <p class="lead text-light glow" id="motto" >Nothing is impossible</p>
+            <a href="https://github.com/bibekghimire-ith" target="_blank" class="btn btn-outline-light " id="btnHead">Read More</a>
+        </div>
+      </div>
+  </div>
+</header>
+
+
+
+<main>
+	<!-- CV Section -->
+	<div class="container-fluid" id="cv">
+		<div class="jumbotron bg-color">
+			<div class="card mb-3 boxShadow">
+				<div class="row d-flex justify-content-center align-items-center">
+					<!-- Image -->
+					<div class="col-md-4 text-center">
+						<img src="./static/images/me1.jpg" class="img-thumbnail img-fluid">
+					</div>
+					<!-- Bio Data -->
+					<div class="col-md-8">
+						<div class="card-body">
+							<h4 class="card-title text-center">Bio Data</h4>
+
+							<table class="table table-bordered table-striped table-responsive-sm table-hover">
+								<thead>
+									<th>Name</th>
+									<th>Bibek Ghimire</th>
+								</thead>			
+								<tbody>
+									<tr>
+										<th>Address</th>
+										<td>Ithari, Sunsari, Nepal</td>	
+									</tr>
+									<tr>
+										<th>Email</th>
+										<td>bibek.ghimire83@gmail.com</td>
+									</tr>
+									<tr>
+										<th>Educational Qualification</th>
+										<td>B.E. Electronics and Communication <br>Tribhuvan University, IOE Purwanchal Campus, Dharan</td>
+									</tr>
+									<tr>
+										<th>Programming Languages</th>
+										<td>C, C++, PHP, Python, SQLite Database</td>
+									</tr>
+									<tr>
+										<th>Hardware Technologies</th>
+										<td>Proteus, Arduino and Raspberry Pi</td>
+									</tr>
+									<tr>
+										<th>Web Development</th>
+										<td>HTML, CSS, Bootstrap, Wordpress, PHP/Laravel Framework, Python/Flask, flask-sqlalchemy</td>
+									</tr>
+									<tr>
+										<th>Operating System</th>
+										<td>Windows, Linux(Debian Based)</td>
+									</tr>
+									<tr>
+										<th>Other Technologies</th>
+										<td>Git, Heroku App Deployment, Web Scraping, Data Visualisation using Pandas, Matplotlib, numpy, Bash Scripting, Microsoft Office tools, FPGA </td>
+									</tr>
+								</tbody>					
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- My Projects Section -->
+<div class="container" id="projects">
+	<div class="">
+		<h2 style="color: red; text-shadow: 2px 2px 2px #ff0000;">My Projects</h2><hr>
+	</div>
+	<!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>IoT based Video Surveillance Robot</strong></h3></p>
+             <p> <i style="color: #282;">Nov 2019</i></p>
+             <p style="text-align: justify; color: #789;">This is a final project of 8th semester of ECE as per the syllabus of IOE. The goal of this project was to build a affordable and portable video surveillance car robot for remote real time monitoring. This prototype could transmit real time video and display the same in webpage. Also, the robot car could be controlled remotely using the website.</p>
+             <p style="text-align: justify; color: #789;">This prototype used Raspberry Pi and Picamera for video streaming and to host our website..</p>
+             <p style="text-align: justify; color: #789;">Similarly, this prototype used dataplicity IoT platform to connect Raspberry Pi to the internet.</p>
+             <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/vidSurv">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <!--<li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="">Site</a></li>-->
+             </ul>
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">Raspberry Pi, Python, HTML, CSS, Bootstrap, Git, Flask, MJPG Streamerss</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/major_project.jpg" style="width:500px;" height="auto">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+<!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>IoT based Health Monitoring Kit</strong></h3></p>
+             <p> <i style="color: #282;">Nov 2018</i></p>
+             <p style="text-align: justify; color: #789;">This is a mini project of 6th semester of ECE as per the syllabus of IOE. I collaborated with a group of 4 students from same faculty to develop a prototype of a affordable and portable health kit. This prototype could measure the body temperature and pulse-rate of a patient and display the same in webpage. Also, Electrocardiograph(ECG) of patient was displayed using python graph. <br>
+
+This prototype used Arduino as microcontroller and SIM800A GSM/GPRS module was used to send the value of measured body parameters to the webpage. <br>
+
+During the project, I developed the webpage, configured and programmed ECG graph and GSM/GPRS module.</p>
+             <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/IoT-healthkit">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://iot-health-kit.herokuapp.com/">Site</a></li>
+             </ul>
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">Arduino, Python, HTML, CSS, Bootstrap, Git, Flask</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/1.jpg" style="width:500px;" height="500">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+       <!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>Personal Website I</strong></h3></p>
+             <p> <i style="color: #282;">Nov 2018 - Present</i></p>
+             <p style="text-align: justify; color: #789;">My first attempt at making a personal website. My expertise is not in frontend but
+             I've tried my best. Any suggestions and feedback are warmly welcomed.</p>
+             <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/personal-website">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="http://bibekghimire.herokuapp.com">Site</a></li>
+             </ul>
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">HTML, CSS, Bootstrap, Git, Flask, Heroku App Engine</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/website.png" style="width:500px;" height="350">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+       
+<!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>Personal Website II</strong></h3></p>
+             <p> <i style="color: #282;">Jan 2020</i></p>
+             <p style="text-align: justify; color: #789;">This is my second version of my personal website. This time used PHP in backend and with admin page to add, delete, update projects, update bio data section along with contact form. Any suggestions and feedback are warmly welcomed.</p>
+             <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="">Site</a></li>
+             </ul>
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">HTML, CSS, PHP, Bootstrap, Git</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/website2.png" style="width:500px;" height="450">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+       <!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>3D Car in OpenGL</strong></h3></p>
+             <p> <i style="color: #282;">March 2018</i></p>
+             <p style="text-align: justify; color: #789;">This project has been a successful learning experience to practically use the functions defined in OpenGL and to understand a variety of features and options present in it. This project showed us a moving car with different views. The inclusion of textures, complex shading and lighting models can make the planes more clear and colourful.</p>
+          <!--   <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/personal-website">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="">Site</a></li>
+             </ul>
+         -->
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">C++ with OpenGL</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/car2.png" style="width:500px;" height="350">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+              <!-- ********************************** -->
+       <!-- Personal Website  -->
+       <br>
+       <div class="container">
+       <div class="row recent-proj">
+         <div class="col-md-6">
+           <div class="project-description">
+             <p class="project-title"><h3><strong>Wordpress Blog Theme</strong></h3></p>
+             <p> <i style="color: #282;">Jan 2020</i></p>
+             <p style="text-align: justify; color: #789;">This is my first attempt to create my own custom Wordpress Blog theme. This is still indevelopment phase and contains only minimal features.
+            </p>
+            <ul>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://github.com/bibekghimire-ith/wordpressblog-customtheme">GitHub Repository</a></li>
+               <li class="d-inline-flex  align-items-center mr-2"> | </li>
+               <li class="d-inline-flex  align-items-center mr-2"><a target="_blank" href="https://wordpressblog83.000webhostapp.com">Site</a></li>
+             </ul>
+      
+             <p><strong>Technologies Used:</strong> <i style="color: #456;">PHP, Wordpress, HTML, CSS</i></p>
+           </div>
+         </div>
+
+         <div class="col-md-6 pics">
+           <img src="./static/images/b.png" style="width:500px;" height="450">
+         </div>
+       </div>
+
+       <hr>
+       </div>
+
+       <!-- ********************************** -->
+
+
+
+</div>
+	
+<!-- Contact Section -->
+
+            <div class="container-fluid"  >
+              <div class="jumbotron bg-color" id="contactSection" style="padding-top: -20px">
+                <div class="row">
+                  <div class=" col-md-6 offset-md-3 contactHeader " >
+                      <h3 class=" text-uppercase">Contact Form</h3> 
+                      <p >You can email me or contact any way</p>
+                  </div>
+                  <div class="col-md-6 p-3 my-3" style=" border: 1px solid white; border-radius: 5px;">
+                    <div class="panel panel-danger">
+                      <div class="panel-body">
+                        <form id="reused_form" method="POST" action="/">
+                          <div class="form-group">
+                            <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-user" aria-hidden="true"></i> Subject</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Enter Your Subject" required>
+                          </div>
+                          <div class="form-group">
+                            <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                            <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message" required></textarea>
+                          </div>
+
+                          <div class="form-group">
+                            <button class="btn btn-raised btn-block btn-light">Send →</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3 my-3" style="border: 1px solid white; border-radius: 5px;" >
+                      <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Tarahara%2C%20Sunsari&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com/divi-discount-code-elegant-themes-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Form Ended -->
+        
+
+
+
+		
+	</div>
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer-dark">
+	<footer class="justify-content-center align-items-center text-center">
+		<span class="text-white">Bibek Ghimire &copy; 2020</span> &nbsp; &nbsp; <a href="https://github.com/bibekghimire-ith">Github</a> | <a href="https://www.linkedin.com/in/bibek-ghimire-47542a130/">Linkeden</a>
+	</footer>
+</div>
+
+
+
+</body>
+</html>
